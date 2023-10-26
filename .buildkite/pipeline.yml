@@ -1,0 +1,7 @@
+steps:
+  - command: ls
+    env:
+      BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
+    plugins:
+      - atte-github/file-counter#main:
+          pattern: '*.md'
